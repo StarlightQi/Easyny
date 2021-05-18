@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+    <com.yalantis.pulltomakesoup.PullToRefreshView
+        android:id="@+id/pull_to_refresh"
+        app:type="soup"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="选择学期"
+            android:id="@+id/xqtext"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp" />
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="22sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:dropDownWidth="200dp"
+            android:dropDownVerticalOffset="50dp"
+            android:layout_toRightOf="@+id/xqtext" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="没有数据"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:id="@+id/cj"
+            android:layout_below="@+id/spinner1"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</ScrollView>
+    </com.yalantis.pulltomakesoup.PullToRefreshView>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:weightSum="1">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="设置"
+           android:textSize="20dp"
+           android:id="@+id/data"
+           />
+       <EditText
+           android:id="@+id/zh"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="账号"
+           android:layout_weight="1"
+           />
+       <EditText
+           android:id="@+id/va"
+           android:hint="密码"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="textPassword"
+           android:layout_weight="1"
+           />
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:id="@+id/fx"
+            android:layout_weight="0.09" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:id="@+id/del"
+            android:layout_weight="0.09" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看"
+            android:id="@+id/look"
+            android:layout_weight="0.09" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitlebarView">
+        <attr name="leftText" format="string"/>
+        <attr name="leftTextColor" format="color"/>
+        <attr name="centerTextColor" format="color"/>
+        <attr name="centerTitle" format="string"/>
+        <attr name="rightTextColor" format="color"/>
+        <attr name="rightText" format="string"/>
+        <attr name="leftDrawble" format="reference"/>
+        <attr name="rightDrawable" format="reference"/>
+        <attr name="rightsDrawable" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="ChatMessageView">
+        <attr name="cmv_showArrow" format="boolean" />
+        <attr name="cmv_arrowPosition" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="cmv_arrowGravity" format="enum">
+            <enum name="start" value="0" />
+            <enum name="center" value="1" />
+            <enum name="end" value="2" />
+        </attr>
+        <attr name="cmv_backgroundColor" format="color" />
+        <attr name="cmv_backgroundColorPressed" format="color" />
+        <attr name="cmv_cornerRadius" format="dimension" />
+        <attr name="cmv_contentPadding" format="dimension" />
+        <attr name="cmv_arrowMargin" format="dimension" />
+
+    </declare-styleable>
+    <declare-styleable name="NoticeView">
+        <!-- 图标 -->
+        <attr name="nvIcon" format="reference"/>
+        <!-- 图标与内容的间隙 -->
+        <attr name="nvIconPadding" format="dimension"/>
+        <!-- 图标颜色 -->
+        <attr name="nvIconTint" format="color"/>
+
+        <!-- 文本尺寸 -->
+        <attr name="nvTextSize" format="dimension"/>
+        <!-- 文本颜色 -->
+        <attr name="nvTextColor" format="color"/>
+        <!-- 文本最大行数 -->
+        <attr name="nvTextMaxLines" format="integer"/>
+        <!-- 文本对齐方式 -->
+        <attr name="nvTextGravity" format="integer">
+            <enum name="left" value="3"/>
+            <enum name="center" value="17"/>
+            <enum name="right" value="5"/>
+        </attr>
+
+        <!-- 切换动画间隔时间，毫秒 -->
+        <attr name="nvInterval" format="integer" >9000000</attr>
+        <!-- 切换动画持续时间，毫秒 -->
+        <attr name="nvDuration" format="integer">5000000</attr>
+    </declare-styleable>
+</resources>

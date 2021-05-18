@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="easyny.ludashen.com.easyny">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".NStart"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login"/>
+        <activity
+            android:name=".NyWeb"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:hardwareAccelerated="true"/>
+        <activity android:name=".Yule"/>
+        <activity android:name=".Help"/>
+        <activity android:name=".Ai"/>
+        <activity android:name=".Nnxy"/>
+        <activity android:name=".Sets"/>
+        <activity android:name=".notiutil.NotiUtil"/>
+        <activity android:name=".Set"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".ZhuTi"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".DiaryList"/>
+        <activity
+            android:name=".ui.TextInput"
+            android:configChanges="keyboardHidden|orientation|locale|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".ui.PhotoPickerActivity"
+            android:configChanges="keyboardHidden|orientation|locale|navigation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".YuYing"
+            android:configChanges="keyboardHidden|orientation|locale|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <service android:name=".service.MyService" />
+
+        <receiver android:name=".service.DuanXin">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".service.WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.lyl.widget.UPDATE_ALL" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget" />
+        </receiver>
+
+        <!-- 用来计时，发送 通知桌面部件更新 -->
+        <service android:name=".service.WidgetService">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APP_WIDGET_SERVICE" />
+            </intent-filter>
+        </service>
+        <activity
+            android:name=".Chat.SingleViewActivity"
+            android:label="聊天"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Chat.Chat">
+        </activity>
+
+    </application>
+
+</manifest>

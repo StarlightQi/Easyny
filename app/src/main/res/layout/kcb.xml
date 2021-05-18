@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yalantis.pulltomakesoup.PullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pull_to_refresh"
+    app:type="soup"
+    android:layout_marginTop="60dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/bz"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/xqxn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                </Spinner>
+                <Spinner
+                    android:id="@+id/zc"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </Spinner>
+            </LinearLayout>
+            <com.diegodobelo.expandingview.ExpandingList
+                android:layout_below="@+id/bz"
+                android:id="@+id/expanding_list_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </ScrollView>
+</com.yalantis.pulltomakesoup.PullToRefreshView>
+

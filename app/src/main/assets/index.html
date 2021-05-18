@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>流星雨</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.text{
+  position: absolute;
+  margin: 2vh 0;
+  opacity: 0;
+  color:  #5f91ff;
+  animation: switch 20s linear;
+  font-size: 50px;
+  font-family: 楷体;
+  z-index: 100;
+}
+@keyframes switch {
+    0% { opacity: 0;filter: blur(20px); transform:scale(12)}
+    3% { opacity: 1;filter: blur(0); transform:scale(1)}
+    70% { opacity: 1;filter: blur(0); transform:scale(.9)}
+    100% { opacity: 0;filter: blur(10px); transform:scale(.1)}
+}	
+</style>
+</head>
+<body>
+<div class="text">便利南院</div>
+<div class="night">
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+</div>
+<script>
+  document.body.addEventListener('touchmove', function(e){
+    e.preventDefault();
+  }, { passive: false });
+</script>
+</body>
+</html>

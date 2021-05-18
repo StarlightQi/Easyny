@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <easyny.ludashen.com.easyny.view.TitlebarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:centerTitle="语读小助手"
+        app:centerTextColor="#0a0909"
+        app:leftTextColor="#000000"
+        app:leftText="关闭"
+        app:rightText="语音设置"
+        app:rightTextColor="#000000"
+        />
+
+    <easyny.ludashen.com.easyny.view.editor.SortRichEditor
+        android:layout_below="@id/title"
+        android:id="@+id/richEditor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bet"
+        android:background="#fff" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bet"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/yudu"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="#4ca4e9"
+            android:text="语音阅读"
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/open"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="#4ca4e9"
+            android:text="打开文件"
+            android:textColor="@android:color/white" />
+
+        <Switch
+            android:id="@+id/duan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="短信自动朗读"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ffffff</color>
+
+        <color name="colorBackground">#241445</color>
+        <color name="separatorColor">#18102C</color>
+
+        <color name="pink">#FF308E</color>
+        <color name="orange">#FA9301</color>
+        <color name="yellow">#F8D411</color>
+        <color name="blue">#20CBF3</color>
+        <color name="purple">#6F26FA</color>
+        <color name="green">#49CC56</color>
+        <color name="white">#FFFFFF</color>
+
+        <color name="photoPackDivider">#DDDDDD</color>
+    <color name="colorWhite">#FFF</color>
+    <color name="transparent">#0000</color>
+
+    <color name="text_black">#737373</color>
+    <color name="text_grey">#9DA0A3</color>
+    <color name="divider">#e6e6e6</color>
+</resources>

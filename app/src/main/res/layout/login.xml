@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2d2d2d"
+    android:theme="@android:style/Widget.Material.Light.DatePicker">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/sipt"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="学号"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/editText"
+        android:background="@drawable/shae"
+        android:layout_gravity="center_horizontal" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/editText2"
+        android:hint="密码"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_horizontal"
+        android:password="true"
+        android:background="@drawable/shae" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动登录"
+            android:textColor="#4d92e6"
+            android:textSize="20dp"
+            android:id="@+id/checkBox"
+            android:layout_marginLeft="30dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="登录"
+            android:background="@drawable/shae"
+            android:layout_marginRight="30dp"
+            android:id="@+id/dl"
+            android:onClick="login" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4d92e6"
+        android:text="技术支持：Ericlan\n点这里直通在线作品>>>"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textView4" />
+</LinearLayout>
+    <easyny.ludashen.com.easyny.view.TitlebarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        app:centerTextColor="#FFF"
+        app:leftTextColor="#FFF"
+        app:rightText="跳过"
+        app:centerTitle="登录"
+        app:rightTextColor="#FFF"
+        />
+    <ImageView
+        android:id="@+id/sipt"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/wo2"
+        />
+</RelativeLayout>
