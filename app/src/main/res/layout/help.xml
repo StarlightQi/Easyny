@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <easyny.ludashen.com.easyny.view.TitlebarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        app:centerTextColor="#FFF"
+        app:leftTextColor="#FFF"
+        app:leftText="返回"
+        app:centerTitle="版本信息"
+        app:rightTextColor="#FFF"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="帮助"
+        android:textSize="25dp"
+        android:layout_below="@+id/title"
+        android:id="@+id/helpText" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="help"
+            android:text="检查更新"
+            android:layout_above="@+id/help_v"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/help_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="便利南院   V 1. 1"
+            />
+    </RelativeLayout>
+

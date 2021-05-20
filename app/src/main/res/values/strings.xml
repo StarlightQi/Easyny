@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">便利南院</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <item name="tag_position" type="id" />
+    <item name="tag_photo" type="id" />
+    <string name="action_settings">Settings</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>
